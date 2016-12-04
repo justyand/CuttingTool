@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    // main colors
+    <color name="colorPrimary">#b7b7b7</color>
+    <color name="colorPrimaryDark">#585858</color>
+    <color name="colorAccent">#810e0e0e</color>
+    <color name="TableRow_L">#b5616161</color>
+    <color name="TableRow_R">#7a616161</color>
+    <color name="tab_sel_color">#dddddd</color>
+    <color name="editbox_background">#7dffffff</color>
+</resources>

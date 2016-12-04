@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="cut_type"  translatable="false">
+        <item>Frézování</item>
+        <item>Soustružení</item>
+        <item>Vrtání</item>
+    </string-array>
+</resources>

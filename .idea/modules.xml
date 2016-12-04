@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/CuttingTool.iml" filepath="$PROJECT_DIR$/CuttingTool.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cutting_tool/cutting_tool.iml" filepath="$PROJECT_DIR$/cutting_tool/cutting_tool.iml" />
+    </modules>
+  </component>
+</project>

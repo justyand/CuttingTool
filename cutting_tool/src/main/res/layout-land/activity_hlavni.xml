@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_hlavni"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/background_light"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:scaleType="fitCenter"
+            android:layout_height="match_parent"
+            android:layout_width="79dp"
+            android:adjustViewBounds="false"
+            app:srcCompat="@drawable/justyrot"
+            android:cropToPadding="true"
+            android:background="@drawable/logorot" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:tileMode="repeat"
+            android:weightSum="5"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:id="@+id/trigonometry"
+                android:minWidth="0dp"
+                android:minHeight="0dp"
+                android:textSize="24sp"
+                android:layout_height="0dp"
+                android:text="@string/trigonometry" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:id="@+id/cut_calculator"
+                android:minWidth="0dp"
+                android:minHeight="0dp"
+                android:textSize="24sp"
+                android:layout_height="0dp"
+                android:text="@string/cut_calculator"
+                android:onClick="cutting_calc" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:id="@+id/fitting"
+                android:minWidth="0dp"
+                android:minHeight="0dp"
+                android:textSize="24sp"
+                android:layout_height="0dp"
+                android:text="@string/fitting" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:id="@+id/trigonometrics"
+                android:minWidth="0dp"
+                android:minHeight="0dp"
+                android:textSize="24sp"
+                android:layout_height="0dp"
+                android:text="@string/trigonometrics" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

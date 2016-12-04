@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_hlavni"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:weightSum="2">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                app:srcCompat="@drawable/justy"
+                android:id="@+id/imageView5"
+                android:layout_weight="2"
+                android:layout_span="2"
+                android:background="@drawable/logo" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:weightSum="2" >
+
+            <org.justyand.cuttingtool.ButtonDynamicTextSize
+                android:text="@string/trigonometry"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:id="@+id/trigonometry"
+                android:minWidth="0dp"
+                android:minHeight="0dp"
+                android:layout_height="100dp"
+                android:textSize="24sp" />
+
+            <org.justyand.cuttingtool.ButtonDynamicTextSize
+                android:text="@string/cut_calculator"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:id="@+id/cut_calculator"
+                android:minWidth="0dp"
+                android:minHeight="0dp"
+                android:layout_height="100dp"
+                android:textSize="24sp"
+                android:onClick="cutting_calc" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:weightSum="2">
+
+            <org.justyand.cuttingtool.ButtonDynamicTextSize
+                android:text="@string/fitting"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:id="@+id/fitting"
+                android:minWidth="0dp"
+                android:minHeight="0dp"
+                android:layout_height="100dp"
+                android:textSize="24sp" />
+
+            <org.justyand.cuttingtool.ButtonDynamicTextSize
+                android:text="@string/trigonometrics"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:id="@+id/trigonometrics"
+                android:minWidth="0dp"
+                android:minHeight="0dp"
+                android:layout_height="100dp"
+                android:onClick="gonio"
+                android:textSize="24sp" />
+        </TableRow>
+    </TableLayout>
+</RelativeLayout>

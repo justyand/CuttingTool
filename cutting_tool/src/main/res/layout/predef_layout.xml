@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2"
+        android:orientation="horizontal"
+        android:checkedButton="@+id/toggleButton3"
+        android:id="@+id/togglegroup">
+
+        <ToggleButton
+            android:text="Vrtání"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/toggleButton3"
+            android:layout_weight="1"
+            android:layout_gravity="top|left"
+            android:checked="true"
+            android:textAllCaps="false"
+            android:textOff="Vrtání"
+            android:textOn="Vrtání"
+            android:onClick="toggle"
+            android:tag="first" />
+
+        <ToggleButton
+            android:text="Závitování"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/toggleButton2"
+            android:layout_weight="1"
+            android:layout_gravity="top|right"
+            android:textOff="Závitování"
+            android:textOn="Závitování"
+            android:onClick="toggle"
+            android:checked="false"
+            android:textAllCaps="false"
+            android:tag="second" />
+    </RadioGroup>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:id="@+id/threads">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </TableLayout>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/drill">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:weightSum="2" >
+
+            <TextView
+                android:text="Materiál"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView5"
+                android:layout_weight="0.5" />
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/material"
+                android:layout_weight="1.5" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:weightSum="2" >
+
+            <TextView
+                android:text="Průměr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView6"
+                android:layout_weight="0.5" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal"
+                android:ems="10"
+                android:id="@+id/diam"
+                android:layout_weight="1.5"
+                android:background="@color/editbox_background"
+                android:padding="5dp" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:weightSum="2"
+            android:layout_weight="1">
+
+            <TextView
+                android:text="TextView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/textView7"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:background="@drawable/textview_background"
+                android:padding="10dp"
+                android:layout_margin="10dp"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="36sp" />
+        </TableRow>
+
+    </TableLayout>
+
+</LinearLayout>

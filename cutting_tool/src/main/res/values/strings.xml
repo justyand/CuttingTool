@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Cutting Tool</string>
+
+    // main buttons
+    <string name="trigonometry" translatable="false">Trigonometrie</string>
+    <string name="cut_calculator" translatable="false">Řezné podmínky</string>
+    <string name="fitting" translatable="false">Lícování</string>
+    <string name="trigonometrics" translatable="false">Goniometrické FCE</string>
+    <string name="calculator">Calculate</string>
+    <string name="predefined">Predefined</string>
+</resources>
